@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Fredoka+One&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+  font-size: 3rem;
+  font-family: "Fredoka One", cursive;
+}
+
+.btns {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: transparent;
+  font-size: 1rem;
+  font-family: "Fredoka One", cursive;
+  border: 3px solid rgb(235, 233, 233);
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color:white;
+  color: black;
+}
+
+.info-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.planet-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+img {
+  display: block;
+}
+
+.photo {
+  object-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
+.planet-info header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planet-info h4 {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.planet-text {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Alumni Sans", sans-serif;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .planet-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-container {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
